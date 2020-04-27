@@ -4,8 +4,8 @@ public class FactoryProvider {
 
     public static KnifeFactory getFactory(String choice) {
         if (choice == "KnifeFactory") {
-            new BudgetsKnifeFactory();
+            return new BudgetsKnifeFactory();
         }
-
+        return null;
     }
 }
