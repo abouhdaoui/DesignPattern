@@ -1,18 +1,10 @@
 package com.itcode.factory;
 
-public class KnifeFactory {
-    public Knife createKnife (String knifeType) {
-        Knife knife = null;
+// Abstract factory
+public abstract class KnifeFactory {
 
-        if (knifeType.equals("steak")) {
-            knife = null;
-        } else if (knifeType.equals("chefs")) {
-            knife = null;
-        }
-        return knife;
-    }
-
-    // we can add easily new subclass to create new type of objects (like fork)
+    // si on a plusieurs client, on peut créer des subclasse de la factory adapté à chaque client
+    abstract Knife getKnife (String knifeType);
 
 
 }
