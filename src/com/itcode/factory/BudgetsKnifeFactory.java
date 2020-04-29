@@ -1,7 +1,7 @@
 package com.itcode.factory;
 
 // concrete factory
-public class BudgetsKnifeFactory implements KnifeFactory {
+public class BudgetsKnifeFactory extends KnifeFactory {
 
 
     @Override
